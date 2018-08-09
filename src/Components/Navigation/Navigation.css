@@ -1,0 +1,34 @@
+#nav {
+	z-index: 9999;
+}
+#nav.affix {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+.navbar-custom {
+	display: flex;
+	margin-bottom: 0;
+	background-color: #121d1f;
+	padding: 10px 0;
+	margin: 0 auto;
+	justify-content: center;
+}
+.navbar-custom a {
+	color: #f4f5f6;
+}
+.navbar-custom .nav li a {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.navbar-custom .nav li a:hover {
+	outline: 0;
+	color: #1a282b;
+	background-color: transparent;
+}
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: transparent;
+	color: #7bc3d1;
+}

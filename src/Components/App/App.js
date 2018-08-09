@@ -1,21 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import portretBW from '../Images/portretBW.jpg';
+import Navigation from '../Navigation/Navigation';
+import About from '../About/About';
+import Skills from '../Skills/Skills';
+import Portfolio from '../Portofolio/Portofolio';
+import Achievements from '../Achievements/Achievements';
+import Resume from '../Resume/Resume';
+import Contact from '../Contact/Contact';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <header id='header'>
+        <div class='intro'>
+          <div class='container'>
+            <div class='intro-text'>
+              <h1>Hello, I'm <span class='name'>Vesna Brekalo</span></h1>
+              <p>UX Designer & Front End Developer</p>
+              <div className='image-intro'>
+                <img src={portretBW} className='portretBW' alt='portretBW'/>
+                <p>I am an artist in soul, a strategist in mind, a revolutionary in heart.</p>
+                <Navigation />
+                <About />
+                <Skills />
+                <Portfolio />
+                <Achievements />
+                <Resume />
+                <Contact />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     );
   }
 }
-
 export default App;
